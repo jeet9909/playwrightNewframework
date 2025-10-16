@@ -1,0 +1,106 @@
+<testsuites id="" name="" tests="2" failures="2" skipped="0" errors="0" time="32.51571499999999">
+<testsuite name="ui\login.spec.ts" timestamp="2025-10-15T22:34:49.916Z" hostname="chromium" tests="2" failures="2" skipped="0" time="62.784" errors="0">
+<testcase name="Login Tests › should login successfully with valid credentials" classname="ui\login.spec.ts" time="31.402">
+<failure message="login.spec.ts:8:3 should login successfully with valid credentials" type="FAILURE">
+<![CDATA[  [chromium] › ui\login.spec.ts:8:3 › Login Tests › should login successfully with valid credentials 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.waitFor: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for locator('#username') to be visible
+
+
+       at ..\src\pages\base\BasePage.ts:25
+
+      23 |
+      24 |   async fill(locator: Locator, text: string): Promise<void> {
+    > 25 |     await locator.waitFor({ state: 'visible' });
+         |                   ^
+      26 |     await locator.fill(text);
+      27 |     this.logger.info(`Filled text: ${text}`);
+      28 |   }
+        at LoginPage.fill (C:\Users\JEET\Downloads\APi and ui automation\src\pages\base\BasePage.ts:25:19)
+        at LoginPage.login (C:\Users\JEET\Downloads\APi and ui automation\src\pages\LoginPage.ts:19:16)
+        at C:\Users\JEET\Downloads\APi and ui automation\tests\ui\login.spec.ts:9:21
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\ui-login-Login-Tests-shoul-b1b82-ully-with-valid-credentials-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\ui-login-Login-Tests-shoul-b1b82-ully-with-valid-credentials-chromium\attachments\video-fde4a0ec06c839a4aeb754e47f6ad3865a1e388d.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\ui-login-Login-Tests-shoul-b1b82-ully-with-valid-credentials-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\ui-login-Login-Tests-shoul-b1b82-ully-with-valid-credentials-chromium\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|ui-login-Login-Tests-shoul-b1b82-ully-with-valid-credentials-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|ui-login-Login-Tests-shoul-b1b82-ully-with-valid-credentials-chromium\attachments\video-fde4a0ec06c839a4aeb754e47f6ad3865a1e388d.webm]]
+
+[[ATTACHMENT|ui-login-Login-Tests-shoul-b1b82-ully-with-valid-credentials-chromium\video.webm]]
+
+[[ATTACHMENT|ui-login-Login-Tests-shoul-b1b82-ully-with-valid-credentials-chromium\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Login Tests › should show error with invalid credentials" classname="ui\login.spec.ts" time="31.382">
+<failure message="login.spec.ts:13:3 should show error with invalid credentials" type="FAILURE">
+<![CDATA[  [chromium] › ui\login.spec.ts:13:3 › Login Tests › should show error with invalid credentials ────
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.waitFor: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for locator('#username') to be visible
+
+
+       at ..\src\pages\base\BasePage.ts:25
+
+      23 |
+      24 |   async fill(locator: Locator, text: string): Promise<void> {
+    > 25 |     await locator.waitFor({ state: 'visible' });
+         |                   ^
+      26 |     await locator.fill(text);
+      27 |     this.logger.info(`Filled text: ${text}`);
+      28 |   }
+        at LoginPage.fill (C:\Users\JEET\Downloads\APi and ui automation\src\pages\base\BasePage.ts:25:19)
+        at LoginPage.login (C:\Users\JEET\Downloads\APi and ui automation\src\pages\LoginPage.ts:19:16)
+        at C:\Users\JEET\Downloads\APi and ui automation\tests\ui\login.spec.ts:14:21
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\ui-login-Login-Tests-shoul-93d05-or-with-invalid-credentials-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\ui-login-Login-Tests-shoul-93d05-or-with-invalid-credentials-chromium\attachments\video-110aa3c1fc031ec0535be3522ca0ad16b365607b.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\ui-login-Login-Tests-shoul-93d05-or-with-invalid-credentials-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\ui-login-Login-Tests-shoul-93d05-or-with-invalid-credentials-chromium\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|ui-login-Login-Tests-shoul-93d05-or-with-invalid-credentials-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|ui-login-Login-Tests-shoul-93d05-or-with-invalid-credentials-chromium\attachments\video-110aa3c1fc031ec0535be3522ca0ad16b365607b.webm]]
+
+[[ATTACHMENT|ui-login-Login-Tests-shoul-93d05-or-with-invalid-credentials-chromium\video.webm]]
+
+[[ATTACHMENT|ui-login-Login-Tests-shoul-93d05-or-with-invalid-credentials-chromium\error-context.md]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>

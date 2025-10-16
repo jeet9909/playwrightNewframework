@@ -1,0 +1,1459 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Extent-like Playwright Report</title><style>body{font-family:Arial,Helvetica,sans-serif;margin:20px}h1{color:#2c3e50}table{border-collapse:collapse;width:100%}th,td{border:1px solid #ddd;padding:8px}th{background:#f4f6f7} .passed{background:#eafaf1}.failed{background:#ffecec}</style></head><body><h1>Extent-like Playwright Report</h1><p>Started: 2025-10-15T22:07:34.668Z — Duration(ms): 36901.105</p><h2>Suites</h2><h3>api\users.api.spec.ts <small>api/users.api.spec.ts</small></h3><table><thead><tr><th>Spec</th><th>Test</th><th>Project</th><th>Status</th><th>Duration(ms)</th><th>Artifacts</th></tr></thead><tbody></tbody></table><h3>example.spec.ts <small>example.spec.ts</small></h3><table><thead><tr><th>Spec</th><th>Test</th><th>Project</th><th>Status</th><th>Duration(ms)</th><th>Artifacts</th></tr></thead><tbody><tr class="passed"><td>example.spec.ts</td><td>playwright homepage title</td><td></td><td>passed</td><td>908</td><td></td></tr><tr class="passed"><td>example.spec.ts</td><td>playwright homepage title</td><td></td><td>passed</td><td>2971</td><td></td></tr><tr class="passed"><td>example.spec.ts</td><td>playwright homepage title</td><td></td><td>passed</td><td>1311</td><td></td></tr></tbody></table><h3>ui\login.spec.ts <small>ui/login.spec.ts</small></h3><table><thead><tr><th>Spec</th><th>Test</th><th>Project</th><th>Status</th><th>Duration(ms)</th><th>Artifacts</th></tr></thead><tbody></tbody></table><h2>Raw JSON</h2><pre>{
+  "config": {
+    "configFile": "C:\\Users\\JEET\\Downloads\\APi and ui automation\\playwright.config.ts",
+    "rootDir": "C:/Users/JEET/Downloads/APi and ui automation/tests",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 8
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "html",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results/results.json"
+        }
+      ],
+      [
+        "junit",
+        {
+          "outputFile": "test-results/results.xml"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "C:/Users/JEET/Downloads/APi and ui automation/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 8
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/Users/JEET/Downloads/APi and ui automation/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/Users/JEET/Downloads/APi and ui automation/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 8
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "C:/Users/JEET/Downloads/APi and ui automation/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/Users/JEET/Downloads/APi and ui automation/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 8
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "C:/Users/JEET/Downloads/APi and ui automation/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/Users/JEET/Downloads/APi and ui automation/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 8
+        },
+        "id": "api",
+        "name": "api",
+        "testDir": "C:/Users/JEET/Downloads/APi and ui automation/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.api\\.spec\\.ts/"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.56.0",
+    "workers": 8,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "api\\users.api.spec.ts",
+      "file": "api/users.api.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "User API Tests",
+          "file": "api/users.api.spec.ts",
+          "line": 4,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should create a new user",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 52,
+                      "error": {
+                        "message": "TypeError: apiRequestContext.post: Invalid URL",
+                        "stack": "TypeError: apiRequestContext.post: Invalid URL\n    at UserAPI.post (C:\\Users\\JEET\\Downloads\\APi and ui automation\\src\\api\\base\\BaseAPI.ts:41:44)\n    at UserAPI.createUser (C:\\Users\\JEET\\Downloads\\APi and ui automation\\src\\api\\UserAPI.ts:7:23)\n    at C:\\Users\\JEET\\Downloads\\APi and ui automation\\tests\\api\\users.api.spec.ts:12:36",
+                        "location": {
+                          "file": "C:\\Users\\JEET\\Downloads\\APi and ui automation\\src\\api\\base\\BaseAPI.ts",
+                          "column": 44,
+                          "line": 41
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m..\\src\\api\\base\\BaseAPI.ts:41\n\n\u001b[0m \u001b[90m 39 |\u001b[39m   \u001b[36masync\u001b[39m post(endpoint\u001b[33m:\u001b[39m string\u001b[33m,\u001b[39m data\u001b[33m:\u001b[39m any) {\n \u001b[90m 40 |\u001b[39m     \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mlogger\u001b[33m.\u001b[39minfo(\u001b[32m`POST request to: ${endpoint}`\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 41 |\u001b[39m     \u001b[36mconst\u001b[39m response \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mapiContext\u001b[33m.\u001b[39mpost(endpoint\u001b[33m,\u001b[39m { data })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 42 |\u001b[39m     \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mlogger\u001b[33m.\u001b[39minfo(\u001b[32m`Response status: ${response.status()}`\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 43 |\u001b[39m     \u001b[36mreturn\u001b[39m response\u001b[33m;\u001b[39m\n \u001b[90m 44 |\u001b[39m   }\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\JEET\\Downloads\\APi and ui automation\\src\\api\\base\\BaseAPI.ts",
+                            "column": 44,
+                            "line": 41
+                          },
+                          "message": "TypeError: apiRequestContext.post: Invalid URL\n\n\u001b[90m   at \u001b[39m..\\src\\api\\base\\BaseAPI.ts:41\n\n\u001b[0m \u001b[90m 39 |\u001b[39m   \u001b[36masync\u001b[39m post(endpoint\u001b[33m:\u001b[39m string\u001b[33m,\u001b[39m data\u001b[33m:\u001b[39m any) {\n \u001b[90m 40 |\u001b[39m     \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mlogger\u001b[33m.\u001b[39minfo(\u001b[32m`POST request to: ${endpoint}`\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 41 |\u001b[39m     \u001b[36mconst\u001b[39m response \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mapiContext\u001b[33m.\u001b[39mpost(endpoint\u001b[33m,\u001b[39m { data })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 42 |\u001b[39m     \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mlogger\u001b[33m.\u001b[39minfo(\u001b[32m`Response status: ${response.status()}`\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 43 |\u001b[39m     \u001b[36mreturn\u001b[39m response\u001b[33m;\u001b[39m\n \u001b[90m 44 |\u001b[39m   }\u001b[0m\n\u001b[2m    at UserAPI.post (C:\\Users\\JEET\\Downloads\\APi and ui automation\\src\\api\\base\\BaseAPI.ts:41:44)\u001b[22m\n\u001b[2m    at UserAPI.createUser (C:\\Users\\JEET\\Downloads\\APi and ui automation\\src\\api\\UserAPI.ts:7:23)\u001b[22m\n\u001b[2m    at C:\\Users\\JEET\\Downloads\\APi and ui automation\\tests\\api\\users.api.spec.ts:12:36\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "[2025-10-15T22:07:36.062Z] [INFO] [UserAPI] POST request to: /users\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-10-15T22:07:36.018Z",
+                      "annotations": [],
+                      "attachments": [],
+                      "errorLocation": {
+                        "file": "C:\\Users\\JEET\\Downloads\\APi and ui automation\\src\\api\\base\\BaseAPI.ts",
+                        "column": 44,
+                        "line": 41
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "c2bc25417f8930492c70-740da4ca5e93d3de60d2",
+              "file": "api/users.api.spec.ts",
+              "line": 5,
+              "column": 3
+            },
+            {
+              "title": "should get user by ID",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "failed",
+                      "duration": 49,
+                      "error": {
+                        "message": "TypeError: apiRequestContext.get: Invalid URL",
+                        "stack": "TypeError: apiRequestContext.get: Invalid URL\n    at UserAPI.get (C:\\Users\\JEET\\Downloads\\APi and ui automation\\src\\api\\base\\BaseAPI.ts:34:44)\n    at UserAPI.getUser (C:\\Users\\JEET\\Downloads\\APi and ui automation\\src\\api\\UserAPI.ts:11:23)\n    at C:\\Users\\JEET\\Downloads\\APi and ui automation\\tests\\api\\users.api.spec.ts:20:36",
+                        "location": {
+                          "file": "C:\\Users\\JEET\\Downloads\\APi and ui automation\\src\\api\\base\\BaseAPI.ts",
+                          "column": 44,
+                          "line": 34
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m..\\src\\api\\base\\BaseAPI.ts:34\n\n\u001b[0m \u001b[90m 32 |\u001b[39m   \u001b[36masync\u001b[39m \u001b[36mget\u001b[39m(endpoint\u001b[33m:\u001b[39m string\u001b[33m,\u001b[39m params\u001b[33m?\u001b[39m\u001b[33m:\u001b[39m \u001b[33mRecord\u001b[39m\u001b[33m<\u001b[39m\u001b[33mstring\u001b[39m\u001b[33m,\u001b[39m any\u001b[33m>\u001b[39m) {\n \u001b[90m 33 |\u001b[39m     \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mlogger\u001b[33m.\u001b[39minfo(\u001b[32m`GET request to: ${endpoint}`\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 34 |\u001b[39m     \u001b[36mconst\u001b[39m response \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mapiContext\u001b[33m.\u001b[39m\u001b[36mget\u001b[39m(endpoint\u001b[33m,\u001b[39m { params })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 35 |\u001b[39m     \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mlogger\u001b[33m.\u001b[39minfo(\u001b[32m`Response status: ${response.status()}`\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 36 |\u001b[39m     \u001b[36mreturn\u001b[39m response\u001b[33m;\u001b[39m\n \u001b[90m 37 |\u001b[39m   }\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\JEET\\Downloads\\APi and ui automation\\src\\api\\base\\BaseAPI.ts",
+                            "column": 44,
+                            "line": 34
+                          },
+                          "message": "TypeError: apiRequestContext.get: Invalid URL\n\n\u001b[90m   at \u001b[39m..\\src\\api\\base\\BaseAPI.ts:34\n\n\u001b[0m \u001b[90m 32 |\u001b[39m   \u001b[36masync\u001b[39m \u001b[36mget\u001b[39m(endpoint\u001b[33m:\u001b[39m string\u001b[33m,\u001b[39m params\u001b[33m?\u001b[39m\u001b[33m:\u001b[39m \u001b[33mRecord\u001b[39m\u001b[33m<\u001b[39m\u001b[33mstring\u001b[39m\u001b[33m,\u001b[39m any\u001b[33m>\u001b[39m) {\n \u001b[90m 33 |\u001b[39m     \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mlogger\u001b[33m.\u001b[39minfo(\u001b[32m`GET request to: ${endpoint}`\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 34 |\u001b[39m     \u001b[36mconst\u001b[39m response \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mapiContext\u001b[33m.\u001b[39m\u001b[36mget\u001b[39m(endpoint\u001b[33m,\u001b[39m { params })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 35 |\u001b[39m     \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mlogger\u001b[33m.\u001b[39minfo(\u001b[32m`Response status: ${response.status()}`\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 36 |\u001b[39m     \u001b[36mreturn\u001b[39m response\u001b[33m;\u001b[39m\n \u001b[90m 37 |\u001b[39m   }\u001b[0m\n\u001b[2m    at UserAPI.get (C:\\Users\\JEET\\Downloads\\APi and ui automation\\src\\api\\base\\BaseAPI.ts:34:44)\u001b[22m\n\u001b[2m    at UserAPI.getUser (C:\\Users\\JEET\\Downloads\\APi and ui automation\\src\\api\\UserAPI.ts:11:23)\u001b[22m\n\u001b[2m    at C:\\Users\\JEET\\Downloads\\APi and ui automation\\tests\\api\\users.api.spec.ts:20:36\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "[2025-10-15T22:07:36.059Z] [INFO] [UserAPI] GET request to: /users/1\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-10-15T22:07:36.017Z",
+                      "annotations": [],
+                      "attachments": [],
+                      "errorLocation": {
+                        "file": "C:\\Users\\JEET\\Downloads\\APi and ui automation\\src\\api\\base\\BaseAPI.ts",
+                        "column": 44,
+                        "line": 34
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "c2bc25417f8930492c70-9cb39abdc6c4f2a8f728",
+              "file": "api/users.api.spec.ts",
+              "line": 19,
+              "column": 3
+            },
+            {
+              "title": "should update user",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "failed",
+                      "duration": 46,
+                      "error": {
+                        "message": "TypeError: apiRequestContext.put: Invalid URL",
+                        "stack": "TypeError: apiRequestContext.put: Invalid URL\n    at UserAPI.put (C:\\Users\\JEET\\Downloads\\APi and ui automation\\src\\api\\base\\BaseAPI.ts:48:44)\n    at UserAPI.updateUser (C:\\Users\\JEET\\Downloads\\APi and ui automation\\src\\api\\UserAPI.ts:15:23)\n    at C:\\Users\\JEET\\Downloads\\APi and ui automation\\tests\\api\\users.api.spec.ts:32:36",
+                        "location": {
+                          "file": "C:\\Users\\JEET\\Downloads\\APi and ui automation\\src\\api\\base\\BaseAPI.ts",
+                          "column": 44,
+                          "line": 48
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m..\\src\\api\\base\\BaseAPI.ts:48\n\n\u001b[0m \u001b[90m 46 |\u001b[39m   \u001b[36masync\u001b[39m put(endpoint\u001b[33m:\u001b[39m string\u001b[33m,\u001b[39m data\u001b[33m:\u001b[39m any) {\n \u001b[90m 47 |\u001b[39m     \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mlogger\u001b[33m.\u001b[39minfo(\u001b[32m`PUT request to: ${endpoint}`\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 48 |\u001b[39m     \u001b[36mconst\u001b[39m response \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mapiContext\u001b[33m.\u001b[39mput(endpoint\u001b[33m,\u001b[39m { data })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 49 |\u001b[39m     \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mlogger\u001b[33m.\u001b[39minfo(\u001b[32m`Response status: ${response.status()}`\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 50 |\u001b[39m     \u001b[36mreturn\u001b[39m response\u001b[33m;\u001b[39m\n \u001b[90m 51 |\u001b[39m   }\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\JEET\\Downloads\\APi and ui automation\\src\\api\\base\\BaseAPI.ts",
+                            "column": 44,
+                            "line": 48
+                          },
+                          "message": "TypeError: apiRequestContext.put: Invalid URL\n\n\u001b[90m   at \u001b[39m..\\src\\api\\base\\BaseAPI.ts:48\n\n\u001b[0m \u001b[90m 46 |\u001b[39m   \u001b[36masync\u001b[39m put(endpoint\u001b[33m:\u001b[39m string\u001b[33m,\u001b[39m data\u001b[33m:\u001b[39m any) {\n \u001b[90m 47 |\u001b[39m     \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mlogger\u001b[33m.\u001b[39minfo(\u001b[32m`PUT request to: ${endpoint}`\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 48 |\u001b[39m     \u001b[36mconst\u001b[39m response \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mapiContext\u001b[33m.\u001b[39mput(endpoint\u001b[33m,\u001b[39m { data })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 49 |\u001b[39m     \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mlogger\u001b[33m.\u001b[39minfo(\u001b[32m`Response status: ${response.status()}`\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 50 |\u001b[39m     \u001b[36mreturn\u001b[39m response\u001b[33m;\u001b[39m\n \u001b[90m 51 |\u001b[39m   }\u001b[0m\n\u001b[2m    at UserAPI.put (C:\\Users\\JEET\\Downloads\\APi and ui automation\\src\\api\\base\\BaseAPI.ts:48:44)\u001b[22m\n\u001b[2m    at UserAPI.updateUser (C:\\Users\\JEET\\Downloads\\APi and ui automation\\src\\api\\UserAPI.ts:15:23)\u001b[22m\n\u001b[2m    at C:\\Users\\JEET\\Downloads\\APi and ui automation\\tests\\api\\users.api.spec.ts:32:36\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "[2025-10-15T22:07:36.094Z] [INFO] [UserAPI] PUT request to: /users/1\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-10-15T22:07:36.051Z",
+                      "annotations": [],
+                      "attachments": [],
+                      "errorLocation": {
+                        "file": "C:\\Users\\JEET\\Downloads\\APi and ui automation\\src\\api\\base\\BaseAPI.ts",
+                        "column": 44,
+                        "line": 48
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "c2bc25417f8930492c70-b5c6f24181b813e0235d",
+              "file": "api/users.api.spec.ts",
+              "line": 27,
+              "column": 3
+            },
+            {
+              "title": "should create a new user",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 6,
+                      "status": "failed",
+                      "duration": 78,
+                      "error": {
+                        "message": "TypeError: apiRequestContext.post: Invalid URL",
+                        "stack": "TypeError: apiRequestContext.post: Invalid URL\n    at UserAPI.post (C:\\Users\\JEET\\Downloads\\APi and ui automation\\src\\api\\base\\BaseAPI.ts:41:44)\n    at UserAPI.createUser (C:\\Users\\JEET\\Downloads\\APi and ui automation\\src\\api\\UserAPI.ts:7:23)\n    at C:\\Users\\JEET\\Downloads\\APi and ui automation\\tests\\api\\users.api.spec.ts:12:36",
+                        "location": {
+                          "file": "C:\\Users\\JEET\\Downloads\\APi and ui automation\\src\\api\\base\\BaseAPI.ts",
+                          "column": 44,
+                          "line": 41
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m..\\src\\api\\base\\BaseAPI.ts:41\n\n\u001b[0m \u001b[90m 39 |\u001b[39m   \u001b[36masync\u001b[39m post(endpoint\u001b[33m:\u001b[39m string\u001b[33m,\u001b[39m data\u001b[33m:\u001b[39m any) {\n \u001b[90m 40 |\u001b[39m     \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mlogger\u001b[33m.\u001b[39minfo(\u001b[32m`POST request to: ${endpoint}`\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 41 |\u001b[39m     \u001b[36mconst\u001b[39m response \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mapiContext\u001b[33m.\u001b[39mpost(endpoint\u001b[33m,\u001b[39m { data })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 42 |\u001b[39m     \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mlogger\u001b[33m.\u001b[39minfo(\u001b[32m`Response status: ${response.status()}`\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 43 |\u001b[39m     \u001b[36mreturn\u001b[39m response\u001b[33m;\u001b[39m\n \u001b[90m 44 |\u001b[39m   }\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\JEET\\Downloads\\APi and ui automation\\src\\api\\base\\BaseAPI.ts",
+                            "column": 44,
+                            "line": 41
+                          },
+                          "message": "TypeError: apiRequestContext.post: Invalid URL\n\n\u001b[90m   at \u001b[39m..\\src\\api\\base\\BaseAPI.ts:41\n\n\u001b[0m \u001b[90m 39 |\u001b[39m   \u001b[36masync\u001b[39m post(endpoint\u001b[33m:\u001b[39m string\u001b[33m,\u001b[39m data\u001b[33m:\u001b[39m any) {\n \u001b[90m 40 |\u001b[39m     \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mlogger\u001b[33m.\u001b[39minfo(\u001b[32m`POST request to: ${endpoint}`\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 41 |\u001b[39m     \u001b[36mconst\u001b[39m response \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mapiContext\u001b[33m.\u001b[39mpost(endpoint\u001b[33m,\u001b[39m { data })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 42 |\u001b[39m     \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mlogger\u001b[33m.\u001b[39minfo(\u001b[32m`Response status: ${response.status()}`\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 43 |\u001b[39m     \u001b[36mreturn\u001b[39m response\u001b[33m;\u001b[39m\n \u001b[90m 44 |\u001b[39m   }\u001b[0m\n\u001b[2m    at UserAPI.post (C:\\Users\\JEET\\Downloads\\APi and ui automation\\src\\api\\base\\BaseAPI.ts:41:44)\u001b[22m\n\u001b[2m    at UserAPI.createUser (C:\\Users\\JEET\\Downloads\\APi and ui automation\\src\\api\\UserAPI.ts:7:23)\u001b[22m\n\u001b[2m    at C:\\Users\\JEET\\Downloads\\APi and ui automation\\tests\\api\\users.api.spec.ts:12:36\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "[2025-10-15T22:07:36.147Z] [INFO] [UserAPI] POST request to: /users\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-10-15T22:07:36.086Z",
+                      "annotations": [],
+                      "attachments": [],
+                      "errorLocation": {
+                        "file": "C:\\Users\\JEET\\Downloads\\APi and ui automation\\src\\api\\base\\BaseAPI.ts",
+                        "column": 44,
+                        "line": 41
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "c2bc25417f8930492c70-1a6a45d13f8427e43369",
+              "file": "api/users.api.spec.ts",
+              "line": 5,
+              "column": 3
+            },
+            {
+              "title": "should get user by ID",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 7,
+                      "status": "failed",
+                      "duration": 49,
+                      "error": {
+                        "message": "TypeError: apiRequestContext.get: Invalid URL",
+                        "stack": "TypeError: apiRequestContext.get: Invalid URL\n    at UserAPI.get (C:\\Users\\JEET\\Downloads\\APi and ui automation\\src\\api\\base\\BaseAPI.ts:34:44)\n    at UserAPI.getUser (C:\\Users\\JEET\\Downloads\\APi and ui automation\\src\\api\\UserAPI.ts:11:23)\n    at C:\\Users\\JEET\\Downloads\\APi and ui automation\\tests\\api\\users.api.spec.ts:20:36",
+                        "location": {
+                          "file": "C:\\Users\\JEET\\Downloads\\APi and ui automation\\src\\api\\base\\BaseAPI.ts",
+                          "column": 44,
+                          "line": 34
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m..\\src\\api\\base\\BaseAPI.ts:34\n\n\u001b[0m \u001b[90m 32 |\u001b[39m   \u001b[36masync\u001b[39m \u001b[36mget\u001b[39m(endpoint\u001b[33m:\u001b[39m string\u001b[33m,\u001b[39m params\u001b[33m?\u001b[39m\u001b[33m:\u001b[39m \u001b[33mRecord\u001b[39m\u001b[33m<\u001b[39m\u001b[33mstring\u001b[39m\u001b[33m,\u001b[39m any\u001b[33m>\u001b[39m) {\n \u001b[90m 33 |\u001b[39m     \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mlogger\u001b[33m.\u001b[39minfo(\u001b[32m`GET request to: ${endpoint}`\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 34 |\u001b[39m     \u001b[36mconst\u001b[39m response \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mapiContext\u001b[33m.\u001b[39m\u001b[36mget\u001b[39m(endpoint\u001b[33m,\u001b[39m { params })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 35 |\u001b[39m     \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mlogger\u001b[33m.\u001b[39minfo(\u001b[32m`Response status: ${response.status()}`\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 36 |\u001b[39m     \u001b[36mreturn\u001b[39m response\u001b[33m;\u001b[39m\n \u001b[90m 37 |\u001b[39m   }\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\JEET\\Downloads\\APi and ui automation\\src\\api\\base\\BaseAPI.ts",
+                            "column": 44,
+                            "line": 34
+                          },
+                          "message": "TypeError: apiRequestContext.get: Invalid URL\n\n\u001b[90m   at \u001b[39m..\\src\\api\\base\\BaseAPI.ts:34\n\n\u001b[0m \u001b[90m 32 |\u001b[39m   \u001b[36masync\u001b[39m \u001b[36mget\u001b[39m(endpoint\u001b[33m:\u001b[39m string\u001b[33m,\u001b[39m params\u001b[33m?\u001b[39m\u001b[33m:\u001b[39m \u001b[33mRecord\u001b[39m\u001b[33m<\u001b[39m\u001b[33mstring\u001b[39m\u001b[33m,\u001b[39m any\u001b[33m>\u001b[39m) {\n \u001b[90m 33 |\u001b[39m     \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mlogger\u001b[33m.\u001b[39minfo(\u001b[32m`GET request to: ${endpoint}`\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 34 |\u001b[39m     \u001b[36mconst\u001b[39m response \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mapiContext\u001b[33m.\u001b[39m\u001b[36mget\u001b[39m(endpoint\u001b[33m,\u001b[39m { params })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 35 |\u001b[39m     \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mlogger\u001b[33m.\u001b[39minfo(\u001b[32m`Response status: ${response.status()}`\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 36 |\u001b[39m     \u001b[36mreturn\u001b[39m response\u001b[33m;\u001b[39m\n \u001b[90m 37 |\u001b[39m   }\u001b[0m\n\u001b[2m    at UserAPI.get (C:\\Users\\JEET\\Downloads\\APi and ui automation\\src\\api\\base\\BaseAPI.ts:34:44)\u001b[22m\n\u001b[2m    at UserAPI.getUser (C:\\Users\\JEET\\Downloads\\APi and ui automation\\src\\api\\UserAPI.ts:11:23)\u001b[22m\n\u001b[2m    at C:\\Users\\JEET\\Downloads\\APi and ui automation\\tests\\api\\users.api.spec.ts:20:36\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "[2025-10-15T22:07:36.110Z] [INFO] [UserAPI] GET request to: /users/1\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-10-15T22:07:36.065Z",
+                      "annotations": [],
+                      "attachments": [],
+                      "errorLocation": {
+                        "file": "C:\\Users\\JEET\\Downloads\\APi and ui automation\\src\\api\\base\\BaseAPI.ts",
+                        "column": 44,
+                        "line": 34
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "c2bc25417f8930492c70-eb21bbc086f8a57a5087",
+              "file": "api/users.api.spec.ts",
+              "line": 19,
+              "column": 3
+            },
+            {
+              "title": "should update user",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 1,
+                      "status": "failed",
+                      "duration": 51,
+                      "error": {
+                        "message": "TypeError: apiRequestContext.put: Invalid URL",
+                        "stack": "TypeError: apiRequestContext.put: Invalid URL\n    at UserAPI.put (C:\\Users\\JEET\\Downloads\\APi and ui automation\\src\\api\\base\\BaseAPI.ts:48:44)\n    at UserAPI.updateUser (C:\\Users\\JEET\\Downloads\\APi and ui automation\\src\\api\\UserAPI.ts:15:23)\n    at C:\\Users\\JEET\\Downloads\\APi and ui automation\\tests\\api\\users.api.spec.ts:32:36",
+                        "location": {
+                          "file": "C:\\Users\\JEET\\Downloads\\APi and ui automation\\src\\api\\base\\BaseAPI.ts",
+                          "column": 44,
+                          "line": 48
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m..\\src\\api\\base\\BaseAPI.ts:48\n\n\u001b[0m \u001b[90m 46 |\u001b[39m   \u001b[36masync\u001b[39m put(endpoint\u001b[33m:\u001b[39m string\u001b[33m,\u001b[39m data\u001b[33m:\u001b[39m any) {\n \u001b[90m 47 |\u001b[39m     \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mlogger\u001b[33m.\u001b[39minfo(\u001b[32m`PUT request to: ${endpoint}`\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 48 |\u001b[39m     \u001b[36mconst\u001b[39m response \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mapiContext\u001b[33m.\u001b[39mput(endpoint\u001b[33m,\u001b[39m { data })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 49 |\u001b[39m     \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mlogger\u001b[33m.\u001b[39minfo(\u001b[32m`Response status: ${response.status()}`\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 50 |\u001b[39m     \u001b[36mreturn\u001b[39m response\u001b[33m;\u001b[39m\n \u001b[90m 51 |\u001b[39m   }\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\JEET\\Downloads\\APi and ui automation\\src\\api\\base\\BaseAPI.ts",
+                            "column": 44,
+                            "line": 48
+                          },
+                          "message": "TypeError: apiRequestContext.put: Invalid URL\n\n\u001b[90m   at \u001b[39m..\\src\\api\\base\\BaseAPI.ts:48\n\n\u001b[0m \u001b[90m 46 |\u001b[39m   \u001b[36masync\u001b[39m put(endpoint\u001b[33m:\u001b[39m string\u001b[33m,\u001b[39m data\u001b[33m:\u001b[39m any) {\n \u001b[90m 47 |\u001b[39m     \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mlogger\u001b[33m.\u001b[39minfo(\u001b[32m`PUT request to: ${endpoint}`\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 48 |\u001b[39m     \u001b[36mconst\u001b[39m response \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mapiContext\u001b[33m.\u001b[39mput(endpoint\u001b[33m,\u001b[39m { data })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 49 |\u001b[39m     \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mlogger\u001b[33m.\u001b[39minfo(\u001b[32m`Response status: ${response.status()}`\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 50 |\u001b[39m     \u001b[36mreturn\u001b[39m response\u001b[33m;\u001b[39m\n \u001b[90m 51 |\u001b[39m   }\u001b[0m\n\u001b[2m    at UserAPI.put (C:\\Users\\JEET\\Downloads\\APi and ui automation\\src\\api\\base\\BaseAPI.ts:48:44)\u001b[22m\n\u001b[2m    at UserAPI.updateUser (C:\\Users\\JEET\\Downloads\\APi and ui automation\\src\\api\\UserAPI.ts:15:23)\u001b[22m\n\u001b[2m    at C:\\Users\\JEET\\Downloads\\APi and ui automation\\tests\\api\\users.api.spec.ts:32:36\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "[2025-10-15T22:07:37.745Z] [INFO] [UserAPI] PUT request to: /users/1\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-10-15T22:07:37.683Z",
+                      "annotations": [],
+                      "attachments": [],
+                      "errorLocation": {
+                        "file": "C:\\Users\\JEET\\Downloads\\APi and ui automation\\src\\api\\base\\BaseAPI.ts",
+                        "column": 44,
+                        "line": 48
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "c2bc25417f8930492c70-9f39e8ab17078f4445ca",
+              "file": "api/users.api.spec.ts",
+              "line": 27,
+              "column": 3
+            },
+            {
+              "title": "should create a new user",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 12,
+                      "parallelIndex": 6,
+                      "status": "failed",
+                      "duration": 47,
+                      "error": {
+                        "message": "TypeError: apiRequestContext.post: Invalid URL",
+                        "stack": "TypeError: apiRequestContext.post: Invalid URL\n    at UserAPI.post (C:\\Users\\JEET\\Downloads\\APi and ui automation\\src\\api\\base\\BaseAPI.ts:41:44)\n    at UserAPI.createUser (C:\\Users\\JEET\\Downloads\\APi and ui automation\\src\\api\\UserAPI.ts:7:23)\n    at C:\\Users\\JEET\\Downloads\\APi and ui automation\\tests\\api\\users.api.spec.ts:12:36",
+                        "location": {
+                          "file": "C:\\Users\\JEET\\Downloads\\APi and ui automation\\src\\api\\base\\BaseAPI.ts",
+                          "column": 44,
+                          "line": 41
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m..\\src\\api\\base\\BaseAPI.ts:41\n\n\u001b[0m \u001b[90m 39 |\u001b[39m   \u001b[36masync\u001b[39m post(endpoint\u001b[33m:\u001b[39m string\u001b[33m,\u001b[39m data\u001b[33m:\u001b[39m any) {\n \u001b[90m 40 |\u001b[39m     \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mlogger\u001b[33m.\u001b[39minfo(\u001b[32m`POST request to: ${endpoint}`\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 41 |\u001b[39m     \u001b[36mconst\u001b[39m response \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mapiContext\u001b[33m.\u001b[39mpost(endpoint\u001b[33m,\u001b[39m { data })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 42 |\u001b[39m     \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mlogger\u001b[33m.\u001b[39minfo(\u001b[32m`Response status: ${response.status()}`\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 43 |\u001b[39m     \u001b[36mreturn\u001b[39m response\u001b[33m;\u001b[39m\n \u001b[90m 44 |\u001b[39m   }\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\JEET\\Downloads\\APi and ui automation\\src\\api\\base\\BaseAPI.ts",
+                            "column": 44,
+                            "line": 41
+                          },
+                          "message": "TypeError: apiRequestContext.post: Invalid URL\n\n\u001b[90m   at \u001b[39m..\\src\\api\\base\\BaseAPI.ts:41\n\n\u001b[0m \u001b[90m 39 |\u001b[39m   \u001b[36masync\u001b[39m post(endpoint\u001b[33m:\u001b[39m string\u001b[33m,\u001b[39m data\u001b[33m:\u001b[39m any) {\n \u001b[90m 40 |\u001b[39m     \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mlogger\u001b[33m.\u001b[39minfo(\u001b[32m`POST request to: ${endpoint}`\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 41 |\u001b[39m     \u001b[36mconst\u001b[39m response \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mapiContext\u001b[33m.\u001b[39mpost(endpoint\u001b[33m,\u001b[39m { data })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 42 |\u001b[39m     \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mlogger\u001b[33m.\u001b[39minfo(\u001b[32m`Response status: ${response.status()}`\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 43 |\u001b[39m     \u001b[36mreturn\u001b[39m response\u001b[33m;\u001b[39m\n \u001b[90m 44 |\u001b[39m   }\u001b[0m\n\u001b[2m    at UserAPI.post (C:\\Users\\JEET\\Downloads\\APi and ui automation\\src\\api\\base\\BaseAPI.ts:41:44)\u001b[22m\n\u001b[2m    at UserAPI.createUser (C:\\Users\\JEET\\Downloads\\APi and ui automation\\src\\api\\UserAPI.ts:7:23)\u001b[22m\n\u001b[2m    at C:\\Users\\JEET\\Downloads\\APi and ui automation\\tests\\api\\users.api.spec.ts:12:36\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "[2025-10-15T22:07:37.804Z] [INFO] [UserAPI] POST request to: /users\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-10-15T22:07:37.756Z",
+                      "annotations": [],
+                      "attachments": [],
+                      "errorLocation": {
+                        "file": "C:\\Users\\JEET\\Downloads\\APi and ui automation\\src\\api\\base\\BaseAPI.ts",
+                        "column": 44,
+                        "line": 41
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "c2bc25417f8930492c70-5cebbd10805cc661258c",
+              "file": "api/users.api.spec.ts",
+              "line": 5,
+              "column": 3
+            },
+            {
+              "title": "should get user by ID",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 14,
+                      "parallelIndex": 3,
+                      "status": "failed",
+                      "duration": 59,
+                      "error": {
+                        "message": "TypeError: apiRequestContext.get: Invalid URL",
+                        "stack": "TypeError: apiRequestContext.get: Invalid URL\n    at UserAPI.get (C:\\Users\\JEET\\Downloads\\APi and ui automation\\src\\api\\base\\BaseAPI.ts:34:44)\n    at UserAPI.getUser (C:\\Users\\JEET\\Downloads\\APi and ui automation\\src\\api\\UserAPI.ts:11:23)\n    at C:\\Users\\JEET\\Downloads\\APi and ui automation\\tests\\api\\users.api.spec.ts:20:36",
+                        "location": {
+                          "file": "C:\\Users\\JEET\\Downloads\\APi and ui automation\\src\\api\\base\\BaseAPI.ts",
+                          "column": 44,
+                          "line": 34
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m..\\src\\api\\base\\BaseAPI.ts:34\n\n\u001b[0m \u001b[90m 32 |\u001b[39m   \u001b[36masync\u001b[39m \u001b[36mget\u001b[39m(endpoint\u001b[33m:\u001b[39m string\u001b[33m,\u001b[39m params\u001b[33m?\u001b[39m\u001b[33m:\u001b[39m \u001b[33mRecord\u001b[39m\u001b[33m<\u001b[39m\u001b[33mstring\u001b[39m\u001b[33m,\u001b[39m any\u001b[33m>\u001b[39m) {\n \u001b[90m 33 |\u001b[39m     \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mlogger\u001b[33m.\u001b[39minfo(\u001b[32m`GET request to: ${endpoint}`\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 34 |\u001b[39m     \u001b[36mconst\u001b[39m response \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mapiContext\u001b[33m.\u001b[39m\u001b[36mget\u001b[39m(endpoint\u001b[33m,\u001b[39m { params })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 35 |\u001b[39m     \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mlogger\u001b[33m.\u001b[39minfo(\u001b[32m`Response status: ${response.status()}`\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 36 |\u001b[39m     \u001b[36mreturn\u001b[39m response\u001b[33m;\u001b[39m\n \u001b[90m 37 |\u001b[39m   }\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\JEET\\Downloads\\APi and ui automation\\src\\api\\base\\BaseAPI.ts",
+                            "column": 44,
+                            "line": 34
+                          },
+                          "message": "TypeError: apiRequestContext.get: Invalid URL\n\n\u001b[90m   at \u001b[39m..\\src\\api\\base\\BaseAPI.ts:34\n\n\u001b[0m \u001b[90m 32 |\u001b[39m   \u001b[36masync\u001b[39m \u001b[36mget\u001b[39m(endpoint\u001b[33m:\u001b[39m string\u001b[33m,\u001b[39m params\u001b[33m?\u001b[39m\u001b[33m:\u001b[39m \u001b[33mRecord\u001b[39m\u001b[33m<\u001b[39m\u001b[33mstring\u001b[39m\u001b[33m,\u001b[39m any\u001b[33m>\u001b[39m) {\n \u001b[90m 33 |\u001b[39m     \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mlogger\u001b[33m.\u001b[39minfo(\u001b[32m`GET request to: ${endpoint}`\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 34 |\u001b[39m     \u001b[36mconst\u001b[39m response \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mapiContext\u001b[33m.\u001b[39m\u001b[36mget\u001b[39m(endpoint\u001b[33m,\u001b[39m { params })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 35 |\u001b[39m     \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mlogger\u001b[33m.\u001b[39minfo(\u001b[32m`Response status: ${response.status()}`\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 36 |\u001b[39m     \u001b[36mreturn\u001b[39m response\u001b[33m;\u001b[39m\n \u001b[90m 37 |\u001b[39m   }\u001b[0m\n\u001b[2m    at UserAPI.get (C:\\Users\\JEET\\Downloads\\APi and ui automation\\src\\api\\base\\BaseAPI.ts:34:44)\u001b[22m\n\u001b[2m    at UserAPI.getUser (C:\\Users\\JEET\\Downloads\\APi and ui automation\\src\\api\\UserAPI.ts:11:23)\u001b[22m\n\u001b[2m    at C:\\Users\\JEET\\Downloads\\APi and ui automation\\tests\\api\\users.api.spec.ts:20:36\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "[2025-10-15T22:07:39.069Z] [INFO] [UserAPI] GET request to: /users/1\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-10-15T22:07:39.014Z",
+                      "annotations": [],
+                      "attachments": [],
+                      "errorLocation": {
+                        "file": "C:\\Users\\JEET\\Downloads\\APi and ui automation\\src\\api\\base\\BaseAPI.ts",
+                        "column": 44,
+                        "line": 34
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "c2bc25417f8930492c70-b7e46107bcfb74b26a47",
+              "file": "api/users.api.spec.ts",
+              "line": 19,
+              "column": 3
+            },
+            {
+              "title": "should update user",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 13,
+                      "parallelIndex": 1,
+                      "status": "failed",
+                      "duration": 57,
+                      "error": {
+                        "message": "TypeError: apiRequestContext.put: Invalid URL",
+                        "stack": "TypeError: apiRequestContext.put: Invalid URL\n    at UserAPI.put (C:\\Users\\JEET\\Downloads\\APi and ui automation\\src\\api\\base\\BaseAPI.ts:48:44)\n    at UserAPI.updateUser (C:\\Users\\JEET\\Downloads\\APi and ui automation\\src\\api\\UserAPI.ts:15:23)\n    at C:\\Users\\JEET\\Downloads\\APi and ui automation\\tests\\api\\users.api.spec.ts:32:36",
+                        "location": {
+                          "file": "C:\\Users\\JEET\\Downloads\\APi and ui automation\\src\\api\\base\\BaseAPI.ts",
+                          "column": 44,
+                          "line": 48
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m..\\src\\api\\base\\BaseAPI.ts:48\n\n\u001b[0m \u001b[90m 46 |\u001b[39m   \u001b[36masync\u001b[39m put(endpoint\u001b[33m:\u001b[39m string\u001b[33m,\u001b[39m data\u001b[33m:\u001b[39m any) {\n \u001b[90m 47 |\u001b[39m     \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mlogger\u001b[33m.\u001b[39minfo(\u001b[32m`PUT request to: ${endpoint}`\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 48 |\u001b[39m     \u001b[36mconst\u001b[39m response \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mapiContext\u001b[33m.\u001b[39mput(endpoint\u001b[33m,\u001b[39m { data })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 49 |\u001b[39m     \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mlogger\u001b[33m.\u001b[39minfo(\u001b[32m`Response status: ${response.status()}`\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 50 |\u001b[39m     \u001b[36mreturn\u001b[39m response\u001b[33m;\u001b[39m\n \u001b[90m 51 |\u001b[39m   }\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\JEET\\Downloads\\APi and ui automation\\src\\api\\base\\BaseAPI.ts",
+                            "column": 44,
+                            "line": 48
+                          },
+                          "message": "TypeError: apiRequestContext.put: Invalid URL\n\n\u001b[90m   at \u001b[39m..\\src\\api\\base\\BaseAPI.ts:48\n\n\u001b[0m \u001b[90m 46 |\u001b[39m   \u001b[36masync\u001b[39m put(endpoint\u001b[33m:\u001b[39m string\u001b[33m,\u001b[39m data\u001b[33m:\u001b[39m any) {\n \u001b[90m 47 |\u001b[39m     \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mlogger\u001b[33m.\u001b[39minfo(\u001b[32m`PUT request to: ${endpoint}`\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 48 |\u001b[39m     \u001b[36mconst\u001b[39m response \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mapiContext\u001b[33m.\u001b[39mput(endpoint\u001b[33m,\u001b[39m { data })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 49 |\u001b[39m     \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mlogger\u001b[33m.\u001b[39minfo(\u001b[32m`Response status: ${response.status()}`\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 50 |\u001b[39m     \u001b[36mreturn\u001b[39m response\u001b[33m;\u001b[39m\n \u001b[90m 51 |\u001b[39m   }\u001b[0m\n\u001b[2m    at UserAPI.put (C:\\Users\\JEET\\Downloads\\APi and ui automation\\src\\api\\base\\BaseAPI.ts:48:44)\u001b[22m\n\u001b[2m    at UserAPI.updateUser (C:\\Users\\JEET\\Downloads\\APi and ui automation\\src\\api\\UserAPI.ts:15:23)\u001b[22m\n\u001b[2m    at C:\\Users\\JEET\\Downloads\\APi and ui automation\\tests\\api\\users.api.spec.ts:32:36\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "[2025-10-15T22:07:39.054Z] [INFO] [UserAPI] PUT request to: /users/1\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-10-15T22:07:38.996Z",
+                      "annotations": [],
+                      "attachments": [],
+                      "errorLocation": {
+                        "file": "C:\\Users\\JEET\\Downloads\\APi and ui automation\\src\\api\\base\\BaseAPI.ts",
+                        "column": 44,
+                        "line": 48
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "c2bc25417f8930492c70-f9bf4a13ea6e4ad33fd5",
+              "file": "api/users.api.spec.ts",
+              "line": 27,
+              "column": 3
+            },
+            {
+              "title": "should create a new user",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "api",
+                  "projectName": "api",
+                  "results": [
+                    {
+                      "workerIndex": 18,
+                      "parallelIndex": 6,
+                      "status": "failed",
+                      "duration": 44,
+                      "error": {
+                        "message": "TypeError: apiRequestContext.post: Invalid URL",
+                        "stack": "TypeError: apiRequestContext.post: Invalid URL\n    at UserAPI.post (C:\\Users\\JEET\\Downloads\\APi and ui automation\\src\\api\\base\\BaseAPI.ts:41:44)\n    at UserAPI.createUser (C:\\Users\\JEET\\Downloads\\APi and ui automation\\src\\api\\UserAPI.ts:7:23)\n    at C:\\Users\\JEET\\Downloads\\APi and ui automation\\tests\\api\\users.api.spec.ts:12:36",
+                        "location": {
+                          "file": "C:\\Users\\JEET\\Downloads\\APi and ui automation\\src\\api\\base\\BaseAPI.ts",
+                          "column": 44,
+                          "line": 41
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m..\\src\\api\\base\\BaseAPI.ts:41\n\n\u001b[0m \u001b[90m 39 |\u001b[39m   \u001b[36masync\u001b[39m post(endpoint\u001b[33m:\u001b[39m string\u001b[33m,\u001b[39m data\u001b[33m:\u001b[39m any) {\n \u001b[90m 40 |\u001b[39m     \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mlogger\u001b[33m.\u001b[39minfo(\u001b[32m`POST request to: ${endpoint}`\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 41 |\u001b[39m     \u001b[36mconst\u001b[39m response \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mapiContext\u001b[33m.\u001b[39mpost(endpoint\u001b[33m,\u001b[39m { data })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 42 |\u001b[39m     \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mlogger\u001b[33m.\u001b[39minfo(\u001b[32m`Response status: ${response.status()}`\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 43 |\u001b[39m     \u001b[36mreturn\u001b[39m response\u001b[33m;\u001b[39m\n \u001b[90m 44 |\u001b[39m   }\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\JEET\\Downloads\\APi and ui automation\\src\\api\\base\\BaseAPI.ts",
+                            "column": 44,
+                            "line": 41
+                          },
+                          "message": "TypeError: apiRequestContext.post: Invalid URL\n\n\u001b[90m   at \u001b[39m..\\src\\api\\base\\BaseAPI.ts:41\n\n\u001b[0m \u001b[90m 39 |\u001b[39m   \u001b[36masync\u001b[39m post(endpoint\u001b[33m:\u001b[39m string\u001b[33m,\u001b[39m data\u001b[33m:\u001b[39m any) {\n \u001b[90m 40 |\u001b[39m     \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mlogger\u001b[33m.\u001b[39minfo(\u001b[32m`POST request to: ${endpoint}`\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 41 |\u001b[39m     \u001b[36mconst\u001b[39m response \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mapiContext\u001b[33m.\u001b[39mpost(endpoint\u001b[33m,\u001b[39m { data })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 42 |\u001b[39m     \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mlogger\u001b[33m.\u001b[39minfo(\u001b[32m`Response status: ${response.status()}`\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 43 |\u001b[39m     \u001b[36mreturn\u001b[39m response\u001b[33m;\u001b[39m\n \u001b[90m 44 |\u001b[39m   }\u001b[0m\n\u001b[2m    at UserAPI.post (C:\\Users\\JEET\\Downloads\\APi and ui automation\\src\\api\\base\\BaseAPI.ts:41:44)\u001b[22m\n\u001b[2m    at UserAPI.createUser (C:\\Users\\JEET\\Downloads\\APi and ui automation\\src\\api\\UserAPI.ts:7:23)\u001b[22m\n\u001b[2m    at C:\\Users\\JEET\\Downloads\\APi and ui automation\\tests\\api\\users.api.spec.ts:12:36\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "[2025-10-15T22:07:42.456Z] [INFO] [UserAPI] POST request to: /users\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-10-15T22:07:42.419Z",
+                      "annotations": [],
+                      "attachments": [],
+                      "errorLocation": {
+                        "file": "C:\\Users\\JEET\\Downloads\\APi and ui automation\\src\\api\\base\\BaseAPI.ts",
+                        "column": 44,
+                        "line": 41
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "c2bc25417f8930492c70-842a305c0c2b27d43aed",
+              "file": "api/users.api.spec.ts",
+              "line": 5,
+              "column": 3
+            },
+            {
+              "title": "should get user by ID",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "api",
+                  "projectName": "api",
+                  "results": [
+                    {
+                      "workerIndex": 19,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 25,
+                      "error": {
+                        "message": "TypeError: apiRequestContext.get: Invalid URL",
+                        "stack": "TypeError: apiRequestContext.get: Invalid URL\n    at UserAPI.get (C:\\Users\\JEET\\Downloads\\APi and ui automation\\src\\api\\base\\BaseAPI.ts:34:44)\n    at UserAPI.getUser (C:\\Users\\JEET\\Downloads\\APi and ui automation\\src\\api\\UserAPI.ts:11:23)\n    at C:\\Users\\JEET\\Downloads\\APi and ui automation\\tests\\api\\users.api.spec.ts:20:36",
+                        "location": {
+                          "file": "C:\\Users\\JEET\\Downloads\\APi and ui automation\\src\\api\\base\\BaseAPI.ts",
+                          "column": 44,
+                          "line": 34
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m..\\src\\api\\base\\BaseAPI.ts:34\n\n\u001b[0m \u001b[90m 32 |\u001b[39m   \u001b[36masync\u001b[39m \u001b[36mget\u001b[39m(endpoint\u001b[33m:\u001b[39m string\u001b[33m,\u001b[39m params\u001b[33m?\u001b[39m\u001b[33m:\u001b[39m \u001b[33mRecord\u001b[39m\u001b[33m<\u001b[39m\u001b[33mstring\u001b[39m\u001b[33m,\u001b[39m any\u001b[33m>\u001b[39m) {\n \u001b[90m 33 |\u001b[39m     \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mlogger\u001b[33m.\u001b[39minfo(\u001b[32m`GET request to: ${endpoint}`\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 34 |\u001b[39m     \u001b[36mconst\u001b[39m response \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mapiContext\u001b[33m.\u001b[39m\u001b[36mget\u001b[39m(endpoint\u001b[33m,\u001b[39m { params })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 35 |\u001b[39m     \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mlogger\u001b[33m.\u001b[39minfo(\u001b[32m`Response status: ${response.status()}`\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 36 |\u001b[39m     \u001b[36mreturn\u001b[39m response\u001b[33m;\u001b[39m\n \u001b[90m 37 |\u001b[39m   }\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\JEET\\Downloads\\APi and ui automation\\src\\api\\base\\BaseAPI.ts",
+                            "column": 44,
+                            "line": 34
+                          },
+                          "message": "TypeError: apiRequestContext.get: Invalid URL\n\n\u001b[90m   at \u001b[39m..\\src\\api\\base\\BaseAPI.ts:34\n\n\u001b[0m \u001b[90m 32 |\u001b[39m   \u001b[36masync\u001b[39m \u001b[36mget\u001b[39m(endpoint\u001b[33m:\u001b[39m string\u001b[33m,\u001b[39m params\u001b[33m?\u001b[39m\u001b[33m:\u001b[39m \u001b[33mRecord\u001b[39m\u001b[33m<\u001b[39m\u001b[33mstring\u001b[39m\u001b[33m,\u001b[39m any\u001b[33m>\u001b[39m) {\n \u001b[90m 33 |\u001b[39m     \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mlogger\u001b[33m.\u001b[39minfo(\u001b[32m`GET request to: ${endpoint}`\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 34 |\u001b[39m     \u001b[36mconst\u001b[39m response \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mapiContext\u001b[33m.\u001b[39m\u001b[36mget\u001b[39m(endpoint\u001b[33m,\u001b[39m { params })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 35 |\u001b[39m     \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mlogger\u001b[33m.\u001b[39minfo(\u001b[32m`Response status: ${response.status()}`\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 36 |\u001b[39m     \u001b[36mreturn\u001b[39m response\u001b[33m;\u001b[39m\n \u001b[90m 37 |\u001b[39m   }\u001b[0m\n\u001b[2m    at UserAPI.get (C:\\Users\\JEET\\Downloads\\APi and ui automation\\src\\api\\base\\BaseAPI.ts:34:44)\u001b[22m\n\u001b[2m    at UserAPI.getUser (C:\\Users\\JEET\\Downloads\\APi and ui automation\\src\\api\\UserAPI.ts:11:23)\u001b[22m\n\u001b[2m    at C:\\Users\\JEET\\Downloads\\APi and ui automation\\tests\\api\\users.api.spec.ts:20:36\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "[2025-10-15T22:07:43.320Z] [INFO] [UserAPI] GET request to: /users/1\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-10-15T22:07:43.294Z",
+                      "annotations": [],
+                      "attachments": [],
+                      "errorLocation": {
+                        "file": "C:\\Users\\JEET\\Downloads\\APi and ui automation\\src\\api\\base\\BaseAPI.ts",
+                        "column": 44,
+                        "line": 34
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "c2bc25417f8930492c70-3168a136dfa55b9ce3ea",
+              "file": "api/users.api.spec.ts",
+              "line": 19,
+              "column": 3
+            },
+            {
+              "title": "should update user",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "api",
+                  "projectName": "api",
+                  "results": [
+                    {
+                      "workerIndex": 20,
+                      "parallelIndex": 6,
+                      "status": "failed",
+                      "duration": 23,
+                      "error": {
+                        "message": "TypeError: apiRequestContext.put: Invalid URL",
+                        "stack": "TypeError: apiRequestContext.put: Invalid URL\n    at UserAPI.put (C:\\Users\\JEET\\Downloads\\APi and ui automation\\src\\api\\base\\BaseAPI.ts:48:44)\n    at UserAPI.updateUser (C:\\Users\\JEET\\Downloads\\APi and ui automation\\src\\api\\UserAPI.ts:15:23)\n    at C:\\Users\\JEET\\Downloads\\APi and ui automation\\tests\\api\\users.api.spec.ts:32:36",
+                        "location": {
+                          "file": "C:\\Users\\JEET\\Downloads\\APi and ui automation\\src\\api\\base\\BaseAPI.ts",
+                          "column": 44,
+                          "line": 48
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m..\\src\\api\\base\\BaseAPI.ts:48\n\n\u001b[0m \u001b[90m 46 |\u001b[39m   \u001b[36masync\u001b[39m put(endpoint\u001b[33m:\u001b[39m string\u001b[33m,\u001b[39m data\u001b[33m:\u001b[39m any) {\n \u001b[90m 47 |\u001b[39m     \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mlogger\u001b[33m.\u001b[39minfo(\u001b[32m`PUT request to: ${endpoint}`\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 48 |\u001b[39m     \u001b[36mconst\u001b[39m response \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mapiContext\u001b[33m.\u001b[39mput(endpoint\u001b[33m,\u001b[39m { data })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 49 |\u001b[39m     \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mlogger\u001b[33m.\u001b[39minfo(\u001b[32m`Response status: ${response.status()}`\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 50 |\u001b[39m     \u001b[36mreturn\u001b[39m response\u001b[33m;\u001b[39m\n \u001b[90m 51 |\u001b[39m   }\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\JEET\\Downloads\\APi and ui automation\\src\\api\\base\\BaseAPI.ts",
+                            "column": 44,
+                            "line": 48
+                          },
+                          "message": "TypeError: apiRequestContext.put: Invalid URL\n\n\u001b[90m   at \u001b[39m..\\src\\api\\base\\BaseAPI.ts:48\n\n\u001b[0m \u001b[90m 46 |\u001b[39m   \u001b[36masync\u001b[39m put(endpoint\u001b[33m:\u001b[39m string\u001b[33m,\u001b[39m data\u001b[33m:\u001b[39m any) {\n \u001b[90m 47 |\u001b[39m     \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mlogger\u001b[33m.\u001b[39minfo(\u001b[32m`PUT request to: ${endpoint}`\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 48 |\u001b[39m     \u001b[36mconst\u001b[39m response \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mapiContext\u001b[33m.\u001b[39mput(endpoint\u001b[33m,\u001b[39m { data })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 49 |\u001b[39m     \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mlogger\u001b[33m.\u001b[39minfo(\u001b[32m`Response status: ${response.status()}`\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 50 |\u001b[39m     \u001b[36mreturn\u001b[39m response\u001b[33m;\u001b[39m\n \u001b[90m 51 |\u001b[39m   }\u001b[0m\n\u001b[2m    at UserAPI.put (C:\\Users\\JEET\\Downloads\\APi and ui automation\\src\\api\\base\\BaseAPI.ts:48:44)\u001b[22m\n\u001b[2m    at UserAPI.updateUser (C:\\Users\\JEET\\Downloads\\APi and ui automation\\src\\api\\UserAPI.ts:15:23)\u001b[22m\n\u001b[2m    at C:\\Users\\JEET\\Downloads\\APi and ui automation\\tests\\api\\users.api.spec.ts:32:36\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "[2025-10-15T22:07:43.604Z] [INFO] [UserAPI] PUT request to: /users/1\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-10-15T22:07:43.577Z",
+                      "annotations": [],
+                      "attachments": [],
+                      "errorLocation": {
+                        "file": "C:\\Users\\JEET\\Downloads\\APi and ui automation\\src\\api\\base\\BaseAPI.ts",
+                        "column": 44,
+                        "line": 48
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "c2bc25417f8930492c70-8f3b6e3f7dddc65496a7",
+              "file": "api/users.api.spec.ts",
+              "line": 27,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "example.spec.ts",
+      "file": "example.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "playwright homepage title",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 3,
+                  "status": "passed",
+                  "duration": 908,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-10-15T22:07:36.001Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\JEET\\Downloads\\APi and ui automation\\test-results\\example-playwright-homepage-title-chromium\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a30a6eba6312f6b87ea5-42bcd0f35cb97d4d3f3d",
+          "file": "example.spec.ts",
+          "line": 4,
+          "column": 1
+        },
+        {
+          "title": "playwright homepage title",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 9,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2971,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-10-15T22:07:37.645Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\JEET\\Downloads\\APi and ui automation\\test-results\\example-playwright-homepage-title-firefox\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a30a6eba6312f6b87ea5-13e02da0562246c3a629",
+          "file": "example.spec.ts",
+          "line": 4,
+          "column": 1
+        },
+        {
+          "title": "playwright homepage title",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 15,
+                  "parallelIndex": 6,
+                  "status": "passed",
+                  "duration": 1311,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-10-15T22:07:38.979Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\JEET\\Downloads\\APi and ui automation\\test-results\\example-playwright-homepage-title-webkit\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a30a6eba6312f6b87ea5-702d9c66ce6f599fa246",
+          "file": "example.spec.ts",
+          "line": 4,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "ui\\login.spec.ts",
+      "file": "ui/login.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Login Tests",
+          "file": "ui/login.spec.ts",
+          "line": 3,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should login successfully with valid credentials",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 4,
+                      "status": "timedOut",
+                      "duration": 31656,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                        },
+                        {
+                          "location": {
+                            "file": "C:\\Users\\JEET\\Downloads\\APi and ui automation\\src\\pages\\base\\BasePage.ts",
+                            "column": 19,
+                            "line": 25
+                          },
+                          "message": "Error: locator.waitFor: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#username') to be visible\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\src\\pages\\base\\BasePage.ts:25\n\n\u001b[0m \u001b[90m 23 |\u001b[39m\n \u001b[90m 24 |\u001b[39m   \u001b[36masync\u001b[39m fill(locator\u001b[33m:\u001b[39m \u001b[33mLocator\u001b[39m\u001b[33m,\u001b[39m text\u001b[33m:\u001b[39m string)\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[36mvoid\u001b[39m\u001b[33m>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 25 |\u001b[39m     \u001b[36mawait\u001b[39m locator\u001b[33m.\u001b[39mwaitFor({ state\u001b[33m:\u001b[39m \u001b[32m'visible'\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 26 |\u001b[39m     \u001b[36mawait\u001b[39m locator\u001b[33m.\u001b[39mfill(text)\u001b[33m;\u001b[39m\n \u001b[90m 27 |\u001b[39m     \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mlogger\u001b[33m.\u001b[39minfo(\u001b[32m`Filled text: ${text}`\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 28 |\u001b[39m   }\u001b[0m\n\u001b[2m    at LoginPage.fill (C:\\Users\\JEET\\Downloads\\APi and ui automation\\src\\pages\\base\\BasePage.ts:25:19)\u001b[22m\n\u001b[2m    at LoginPage.login (C:\\Users\\JEET\\Downloads\\APi and ui automation\\src\\pages\\LoginPage.ts:19:16)\u001b[22m\n\u001b[2m    at C:\\Users\\JEET\\Downloads\\APi and ui automation\\tests\\ui\\login.spec.ts:9:21\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-10-15T22:07:36.032Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\JEET\\Downloads\\APi and ui automation\\test-results\\ui-login-Login-Tests-shoul-b1b82-ully-with-valid-credentials-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\JEET\\Downloads\\APi and ui automation\\test-results\\ui-login-Login-Tests-shoul-b1b82-ully-with-valid-credentials-chromium\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\JEET\\Downloads\\APi and ui automation\\test-results\\ui-login-Login-Tests-shoul-b1b82-ully-with-valid-credentials-chromium\\error-context.md"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "25217b8bb4316ea872c4-4c549cb8a968360c86ce",
+              "file": "ui/login.spec.ts",
+              "line": 8,
+              "column": 3
+            },
+            {
+              "title": "should show error with invalid credentials",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 5,
+                      "status": "timedOut",
+                      "duration": 31611,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                        },
+                        {
+                          "location": {
+                            "file": "C:\\Users\\JEET\\Downloads\\APi and ui automation\\src\\pages\\base\\BasePage.ts",
+                            "column": 19,
+                            "line": 25
+                          },
+                          "message": "Error: locator.waitFor: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#username') to be visible\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\src\\pages\\base\\BasePage.ts:25\n\n\u001b[0m \u001b[90m 23 |\u001b[39m\n \u001b[90m 24 |\u001b[39m   \u001b[36masync\u001b[39m fill(locator\u001b[33m:\u001b[39m \u001b[33mLocator\u001b[39m\u001b[33m,\u001b[39m text\u001b[33m:\u001b[39m string)\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[36mvoid\u001b[39m\u001b[33m>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 25 |\u001b[39m     \u001b[36mawait\u001b[39m locator\u001b[33m.\u001b[39mwaitFor({ state\u001b[33m:\u001b[39m \u001b[32m'visible'\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 26 |\u001b[39m     \u001b[36mawait\u001b[39m locator\u001b[33m.\u001b[39mfill(text)\u001b[33m;\u001b[39m\n \u001b[90m 27 |\u001b[39m     \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mlogger\u001b[33m.\u001b[39minfo(\u001b[32m`Filled text: ${text}`\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 28 |\u001b[39m   }\u001b[0m\n\u001b[2m    at LoginPage.fill (C:\\Users\\JEET\\Downloads\\APi and ui automation\\src\\pages\\base\\BasePage.ts:25:19)\u001b[22m\n\u001b[2m    at LoginPage.login (C:\\Users\\JEET\\Downloads\\APi and ui automation\\src\\pages\\LoginPage.ts:19:16)\u001b[22m\n\u001b[2m    at C:\\Users\\JEET\\Downloads\\APi and ui automation\\tests\\ui\\login.spec.ts:14:21\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-10-15T22:07:36.019Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\JEET\\Downloads\\APi and ui automation\\test-results\\ui-login-Login-Tests-shoul-93d05-or-with-invalid-credentials-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\JEET\\Downloads\\APi and ui automation\\test-results\\ui-login-Login-Tests-shoul-93d05-or-with-invalid-credentials-chromium\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\JEET\\Downloads\\APi and ui automation\\test-results\\ui-login-Login-Tests-shoul-93d05-or-with-invalid-credentials-chromium\\error-context.md"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "25217b8bb4316ea872c4-ac052832039c49367d94",
+              "file": "ui/login.spec.ts",
+              "line": 13,
+              "column": 3
+            },
+            {
+              "title": "should login successfully with valid credentials",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 10,
+                      "parallelIndex": 2,
+                      "status": "timedOut",
+                      "duration": 30099,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n    at C:\\Users\\JEET\\Downloads\\APi and ui automation\\tests\\ui\\login.spec.ts:4:8",
+                        "location": {
+                          "file": "C:\\Users\\JEET\\Downloads\\APi and ui automation\\tests\\ui\\login.spec.ts",
+                          "column": 8,
+                          "line": 4
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 2 |\u001b[39m\n \u001b[90m 3 |\u001b[39m test\u001b[33m.\u001b[39mdescribe(\u001b[32m'Login Tests'\u001b[39m\u001b[33m,\u001b[39m () \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 4 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m   |\u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 5 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'/login'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 6 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 7 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\JEET\\Downloads\\APi and ui automation\\tests\\ui\\login.spec.ts",
+                            "column": 8,
+                            "line": 4
+                          },
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n\n\u001b[0m \u001b[90m 2 |\u001b[39m\n \u001b[90m 3 |\u001b[39m test\u001b[33m.\u001b[39mdescribe(\u001b[32m'Login Tests'\u001b[39m\u001b[33m,\u001b[39m () \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 4 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m   |\u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 5 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'/login'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 6 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 7 |\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\JEET\\Downloads\\APi and ui automation\\tests\\ui\\login.spec.ts:4:8\u001b[22m"
+                        },
+                        {
+                          "location": {
+                            "file": "C:\\Users\\JEET\\Downloads\\APi and ui automation\\tests\\ui\\login.spec.ts",
+                            "column": 16,
+                            "line": 5
+                          },
+                          "message": "Error: page.goto: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://example.com/login\", waiting until \"load\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 3 |\u001b[39m test\u001b[33m.\u001b[39mdescribe(\u001b[32m'Login Tests'\u001b[39m\u001b[33m,\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 4 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 5 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'/login'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m   |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 6 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 7 |\u001b[39m\n \u001b[90m 8 |\u001b[39m   test(\u001b[32m'should login successfully with valid credentials'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ loginPage }) \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[2m    at C:\\Users\\JEET\\Downloads\\APi and ui automation\\tests\\ui\\login.spec.ts:5:16\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-10-15T22:07:37.692Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\JEET\\Downloads\\APi and ui automation\\test-results\\ui-login-Login-Tests-shoul-b1b82-ully-with-valid-credentials-firefox\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\JEET\\Downloads\\APi and ui automation\\test-results\\ui-login-Login-Tests-shoul-b1b82-ully-with-valid-credentials-firefox\\video.webm"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\JEET\\Downloads\\APi and ui automation\\tests\\ui\\login.spec.ts",
+                        "column": 8,
+                        "line": 4
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "25217b8bb4316ea872c4-a4a6094b800233c85113",
+              "file": "ui/login.spec.ts",
+              "line": 8,
+              "column": 3
+            },
+            {
+              "title": "should show error with invalid credentials",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 11,
+                      "parallelIndex": 7,
+                      "status": "timedOut",
+                      "duration": 30096,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n    at C:\\Users\\JEET\\Downloads\\APi and ui automation\\tests\\ui\\login.spec.ts:4:8",
+                        "location": {
+                          "file": "C:\\Users\\JEET\\Downloads\\APi and ui automation\\tests\\ui\\login.spec.ts",
+                          "column": 8,
+                          "line": 4
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 2 |\u001b[39m\n \u001b[90m 3 |\u001b[39m test\u001b[33m.\u001b[39mdescribe(\u001b[32m'Login Tests'\u001b[39m\u001b[33m,\u001b[39m () \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 4 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m   |\u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 5 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'/login'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 6 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 7 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\JEET\\Downloads\\APi and ui automation\\tests\\ui\\login.spec.ts",
+                            "column": 8,
+                            "line": 4
+                          },
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n\n\u001b[0m \u001b[90m 2 |\u001b[39m\n \u001b[90m 3 |\u001b[39m test\u001b[33m.\u001b[39mdescribe(\u001b[32m'Login Tests'\u001b[39m\u001b[33m,\u001b[39m () \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 4 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m   |\u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 5 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'/login'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 6 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 7 |\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\JEET\\Downloads\\APi and ui automation\\tests\\ui\\login.spec.ts:4:8\u001b[22m"
+                        },
+                        {
+                          "location": {
+                            "file": "C:\\Users\\JEET\\Downloads\\APi and ui automation\\tests\\ui\\login.spec.ts",
+                            "column": 16,
+                            "line": 5
+                          },
+                          "message": "Error: page.goto: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://example.com/login\", waiting until \"load\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 3 |\u001b[39m test\u001b[33m.\u001b[39mdescribe(\u001b[32m'Login Tests'\u001b[39m\u001b[33m,\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 4 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 5 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'/login'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m   |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 6 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 7 |\u001b[39m\n \u001b[90m 8 |\u001b[39m   test(\u001b[32m'should login successfully with valid credentials'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ loginPage }) \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[2m    at C:\\Users\\JEET\\Downloads\\APi and ui automation\\tests\\ui\\login.spec.ts:5:16\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-10-15T22:07:37.740Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\JEET\\Downloads\\APi and ui automation\\test-results\\ui-login-Login-Tests-shoul-93d05-or-with-invalid-credentials-firefox\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\JEET\\Downloads\\APi and ui automation\\test-results\\ui-login-Login-Tests-shoul-93d05-or-with-invalid-credentials-firefox\\video.webm"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\JEET\\Downloads\\APi and ui automation\\tests\\ui\\login.spec.ts",
+                        "column": 8,
+                        "line": 4
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "25217b8bb4316ea872c4-f2b62ce7ef07a18083e0",
+              "file": "ui/login.spec.ts",
+              "line": 13,
+              "column": 3
+            },
+            {
+              "title": "should login successfully with valid credentials",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 16,
+                      "parallelIndex": 1,
+                      "status": "timedOut",
+                      "duration": 30216,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                        },
+                        {
+                          "location": {
+                            "file": "C:\\Users\\JEET\\Downloads\\APi and ui automation\\src\\pages\\base\\BasePage.ts",
+                            "column": 19,
+                            "line": 25
+                          },
+                          "message": "Error: locator.waitFor: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#username') to be visible\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\src\\pages\\base\\BasePage.ts:25\n\n\u001b[0m \u001b[90m 23 |\u001b[39m\n \u001b[90m 24 |\u001b[39m   \u001b[36masync\u001b[39m fill(locator\u001b[33m:\u001b[39m \u001b[33mLocator\u001b[39m\u001b[33m,\u001b[39m text\u001b[33m:\u001b[39m string)\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[36mvoid\u001b[39m\u001b[33m>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 25 |\u001b[39m     \u001b[36mawait\u001b[39m locator\u001b[33m.\u001b[39mwaitFor({ state\u001b[33m:\u001b[39m \u001b[32m'visible'\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 26 |\u001b[39m     \u001b[36mawait\u001b[39m locator\u001b[33m.\u001b[39mfill(text)\u001b[33m;\u001b[39m\n \u001b[90m 27 |\u001b[39m     \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mlogger\u001b[33m.\u001b[39minfo(\u001b[32m`Filled text: ${text}`\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 28 |\u001b[39m   }\u001b[0m\n\u001b[2m    at LoginPage.fill (C:\\Users\\JEET\\Downloads\\APi and ui automation\\src\\pages\\base\\BasePage.ts:25:19)\u001b[22m\n\u001b[2m    at LoginPage.login (C:\\Users\\JEET\\Downloads\\APi and ui automation\\src\\pages\\LoginPage.ts:19:16)\u001b[22m\n\u001b[2m    at C:\\Users\\JEET\\Downloads\\APi and ui automation\\tests\\ui\\login.spec.ts:9:21\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-10-15T22:07:41.166Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\JEET\\Downloads\\APi and ui automation\\test-results\\ui-login-Login-Tests-shoul-b1b82-ully-with-valid-credentials-webkit\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\JEET\\Downloads\\APi and ui automation\\test-results\\ui-login-Login-Tests-shoul-b1b82-ully-with-valid-credentials-webkit\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\JEET\\Downloads\\APi and ui automation\\test-results\\ui-login-Login-Tests-shoul-b1b82-ully-with-valid-credentials-webkit\\error-context.md"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "25217b8bb4316ea872c4-5efc29c493eb3eecb988",
+              "file": "ui/login.spec.ts",
+              "line": 8,
+              "column": 3
+            },
+            {
+              "title": "should show error with invalid credentials",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 17,
+                      "parallelIndex": 3,
+                      "status": "timedOut",
+                      "duration": 30203,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n    at C:\\Users\\JEET\\Downloads\\APi and ui automation\\tests\\ui\\login.spec.ts:4:8",
+                        "location": {
+                          "file": "C:\\Users\\JEET\\Downloads\\APi and ui automation\\tests\\ui\\login.spec.ts",
+                          "column": 8,
+                          "line": 4
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 2 |\u001b[39m\n \u001b[90m 3 |\u001b[39m test\u001b[33m.\u001b[39mdescribe(\u001b[32m'Login Tests'\u001b[39m\u001b[33m,\u001b[39m () \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 4 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m   |\u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 5 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'/login'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 6 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 7 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\JEET\\Downloads\\APi and ui automation\\tests\\ui\\login.spec.ts",
+                            "column": 8,
+                            "line": 4
+                          },
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n\n\u001b[0m \u001b[90m 2 |\u001b[39m\n \u001b[90m 3 |\u001b[39m test\u001b[33m.\u001b[39mdescribe(\u001b[32m'Login Tests'\u001b[39m\u001b[33m,\u001b[39m () \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 4 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m   |\u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 5 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'/login'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 6 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 7 |\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\JEET\\Downloads\\APi and ui automation\\tests\\ui\\login.spec.ts:4:8\u001b[22m"
+                        },
+                        {
+                          "location": {
+                            "file": "C:\\Users\\JEET\\Downloads\\APi and ui automation\\tests\\ui\\login.spec.ts",
+                            "column": 16,
+                            "line": 5
+                          },
+                          "message": "Error: page.goto: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://example.com/login\", waiting until \"load\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 3 |\u001b[39m test\u001b[33m.\u001b[39mdescribe(\u001b[32m'Login Tests'\u001b[39m\u001b[33m,\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 4 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 5 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'/login'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m   |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 6 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 7 |\u001b[39m\n \u001b[90m 8 |\u001b[39m   test(\u001b[32m'should login successfully with valid credentials'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ loginPage }) \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[2m    at C:\\Users\\JEET\\Downloads\\APi and ui automation\\tests\\ui\\login.spec.ts:5:16\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-10-15T22:07:41.165Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\JEET\\Downloads\\APi and ui automation\\test-results\\ui-login-Login-Tests-shoul-93d05-or-with-invalid-credentials-webkit\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\JEET\\Downloads\\APi and ui automation\\test-results\\ui-login-Login-Tests-shoul-93d05-or-with-invalid-credentials-webkit\\video.webm"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\JEET\\Downloads\\APi and ui automation\\tests\\ui\\login.spec.ts",
+                        "column": 8,
+                        "line": 4
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "25217b8bb4316ea872c4-c6aa894e7eb417c357e9",
+              "file": "ui/login.spec.ts",
+              "line": 13,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2025-10-15T22:07:34.668Z",
+    "duration": 36901.105,
+    "expected": 3,
+    "skipped": 0,
+    "unexpected": 18,
+    "flaky": 0
+  }
+}</pre></body></html>
